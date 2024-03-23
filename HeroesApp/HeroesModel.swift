@@ -12,17 +12,19 @@ import Foundation
 struct Heroe: Codable {
     let id: String
     let nombreReal: String
+    let apodo: String
     let descripcion: String?
     let historia: String?
     let descripcionHistoria: String?
     let edad: Int
     let poderes: [Poderes]
-
+    let imagen: String
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(String.self, forKey: .id)
         self.nombreReal = try container.decode(String.self, forKey: .nombreReal)
+        self.apodo = try container.decode(String.self, forKey: .apodo)
         
         self.descripcion = try container.decodeIfPresent(String.self, forKey: .descripcion)
         self.historia = try container.decodeIfPresent(String.self, forKey: .historia)
@@ -40,6 +42,9 @@ struct Heroe: Codable {
             
             //print(error)
         }
+        self.imagen = try container.decode(String.self, forKey: .imagen)
+
+        
 
     }
     enum Poderes: String, Codable, CaseIterable{

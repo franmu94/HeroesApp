@@ -18,6 +18,10 @@ final class HeroesLogic {
         self.heroes = (try? interactor.getHeroes()) ?? []
     }
     
+    func getHeroe(indexPath: IndexPath) -> Heroe {
+        heroes[indexPath.row]
+    }
+    
     func removeHeroe(heroe: Heroe) {}
     
     func moveHeroe(heroe: Heroe) {}

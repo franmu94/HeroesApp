@@ -20,7 +20,6 @@ struct HeroesInteractor: DataInteractor, JSONLoader{
     
     func getHeroes() throws -> [Heroe] {
         guard let jsonUrl = Bundle.main.url(forResource: "SuperHeroes", withExtension: "json") else { return [] }
-        let data = try Data(contentsOf: jsonUrl)
         return try getJSON(url: jsonUrl, type: [Heroe].self)
     }
     
