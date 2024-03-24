@@ -21,6 +21,7 @@
 		D3EA9C6F2BAF493F00FB2F8A /* HeroesDataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = D3EA9C6E2BAF493F00FB2F8A /* HeroesDataTest.json */; };
 		D3EA9C712BAF4D9700FB2F8A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA9C702BAF4D9700FB2F8A /* JSONLoader.swift */; };
 		D3EA9C732BAF520500FB2F8A /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA9C722BAF520500FB2F8A /* HeroesTableViewController.swift */; };
+		D3EA9C752BAF93EE00FB2F8A /* HeroeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA9C742BAF93EE00FB2F8A /* HeroeDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D3EA9C6E2BAF493F00FB2F8A /* HeroesDataTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HeroesDataTest.json; sourceTree = "<group>"; };
 		D3EA9C702BAF4D9700FB2F8A /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		D3EA9C722BAF520500FB2F8A /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
+		D3EA9C742BAF93EE00FB2F8A /* HeroeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				D3679D9E2BA9BE32004508E3 /* Main.storyboard */,
-				D3EA9C722BAF520500FB2F8A /* HeroesTableViewController.swift */,
+				D3EA9C762BAF940C00FB2F8A /* ViewControllers */,
 				D3679DF82BAB0500004508E3 /* Logic */,
 				D3679DF72BAB04F4004508E3 /* Interactor */,
 				D3679DFA2BAB0535004508E3 /* Model */,
@@ -137,6 +139,15 @@
 				D3EA9C6E2BAF493F00FB2F8A /* HeroesDataTest.json */,
 			);
 			path = "Test Content";
+			sourceTree = "<group>";
+		};
+		D3EA9C762BAF940C00FB2F8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3EA9C742BAF93EE00FB2F8A /* HeroeDetailTableViewController.swift */,
+				D3EA9C722BAF520500FB2F8A /* HeroesTableViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				D3EA9C6A2BAF3E8200FB2F8A /* HeroesLogic.swift in Sources */,
 				D3EA9C712BAF4D9700FB2F8A /* JSONLoader.swift in Sources */,
 				D3679D992BA9BE32004508E3 /* AppDelegate.swift in Sources */,
+				D3EA9C752BAF93EE00FB2F8A /* HeroeDetailTableViewController.swift in Sources */,
 				D3EA9C662BAF139000FB2F8A /* Poderes.swift in Sources */,
 				D3679D9B2BA9BE32004508E3 /* SceneDelegate.swift in Sources */,
 				D3EA9C682BAF3C6400FB2F8A /* HeroesInteractor.swift in Sources */,

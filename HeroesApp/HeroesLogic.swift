@@ -11,7 +11,7 @@ final class HeroesLogic {
     static let shared = HeroesLogic()
     
     let interactor: DataInteractor
-    let heroes: [Heroe]
+    var heroes: [Heroe]
     
     init(interactor: DataInteractor = HeroesInteractor.shared) {
         self.interactor = interactor
@@ -22,9 +22,13 @@ final class HeroesLogic {
         heroes[indexPath.row]
     }
     
-    func removeHeroe(heroe: Heroe) {}
+    func removeHeroe(indexPath: IndexPath) {
+        heroes.remove(at: indexPath.row)
+    }
     
-    func moveHeroe(heroe: Heroe) {}
+    func moveHeroe(indexPath: IndexPath, to: IndexPath) {
+        heroes.swapAt(indexPath.row, to.row)
+    }
 
     func updateHeroe(heroe: Heroe) {}
 
